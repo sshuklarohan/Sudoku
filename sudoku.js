@@ -51,6 +51,7 @@ function setBoard(){
                 input.type = "text";
                 input.maxLength = 1;
                 input.classList.add("tile-input");
+                input.setAttribute("autocomplete", "off");
                 tile.appendChild(input);
                 input.addEventListener("input",handleInput);
                 inputs.push({row: r, col: c});
